@@ -11,132 +11,160 @@
     <link rel="stylesheet" href="css/skeleton-auto.css">
     <link rel="stylesheet" href="css/brands.css">
     <link rel="icon" type="image/png" href="images/download-1.png">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        .circular-scroll-container {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .circular-scroll {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            animation: rotate 20s linear infinite;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .circular-scroll a {
+            width: 80px;
+            height: 80px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .circular-scroll a:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.1);
+        }
+
+        .circular-scroll img.icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
-<style>
 
-    .circular-scroll-container {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.circular-scroll {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    animation: rotate 30s linear infinite;
-}
-
-.circular-scroll a {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-.circular-scroll img.icon {
-    width: 24px;
-    height: 24px;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-    
-</style>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="column" style="margin-top: 10%">
-                <img src="images/AAA.svg" class="avatar" alt="">
-                <h1 role="heading">AASHIF</h1>
-                <p>My Profile Links.</p>
-                <div class="circular-scroll-container">
-                    <div class="circular-scroll">
-                        <a class="button button-linked" href="https://codeforces.com/profile/aashif000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/codeforces.svg" alt="Codeforces Logo">Codeforces
-                        </a>
-                        <a class="button button-dev-to" href="https://dev.to/aashif000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/dev-to.svg" alt="Dev.to Logo">Dev.to
-                        </a>
-                        <a class="button button-default" href="mailto:useforalljob1@gmail.com?subject=Your%20Subject%20Here&body=Your%20message%20here" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Me
-                        </a>
-                        <a class="button button-default" href="https://aashif000.github.io/My-Dark-UI-Profile/" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Homepage Icon">Visit Homepage
-                        </a>
-                        <a class="button button-fiverr" href="https://www.fiverr.com/aashif000?up_rollout=true" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/fiverr.svg" alt="Fiverr Logo">Fiverr Gig
-                        </a>
-                        <a class="button button-github" href="https://github.com/aashif000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub
-                        </a>
-                        <a class="button button-linked" href="https://www.hackerrank.com/profile/aashif000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/hackerrank.svg" alt="HackerRank Logo">HackerRank
-                        </a>
-                        <a class="button button-hashnode" href="https://hashnode.com/@aashif000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/hashnode.svg" alt="Hashnode Logo">Hashnode
-                        </a>
-                        <a class="button button-instagram" href="https://www.instagram.com/aax._if/" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram
-                        </a>
-                        <a class="button button-linked" href="https://www.linkedin.com/in/aashif-mj/" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn
-                        </a>
-                        <a class="button button-linked" href="https://leetcode.com/user-profile/aashif0000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/leetcode.svg" alt="LeetCode Logo">LeetCode
-                        </a>
-                        <a class="button button-mastodon" href="https://mastodon.social/@aashif000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/mastodon.svg" alt="Mastodon Logo">Mastodon
-                        </a>
-                        <a class="button button-medium" href="https://medium.com/@aashif000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/medium.svg" alt="Medium Logo">Medium
-                        </a>
-                        <a class="button button-pinterest" href="https://www.pinterest.com/useforalljob1/" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/pinterest.svg" alt="Pinterest Logo">Pinterest
-                        </a>
-                        <a class="button button-read-cv" href="https://read.cv/aashif000" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/read-cv.svg" alt="Read.cv logo">Read.cv
-                        </a>
-                        <a class="button button-reddit" href="https://www.reddit.com/user/Nice-Problem-5510/" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/reddit.svg" alt="Reddit Logo">Reddit
-                        </a>
-                        <a class="button button-slack" href="https://newworkspace-jre9172.slack.com/team/U06UVNFQC9G" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/slack.svg" alt="Slack Logo">Join Slack
-                        </a>
-                        <a class="button button-stack-overflow" href="https://stackoverflow.com/users/21885166/aashee" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/stack-overflow.svg" alt="Stack Overflow Logo">Stack Overflow
-                        </a>
-                        <a class="button button-upwork" href="https://www.upwork.com/freelancers/~01205e731893a6128d" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/upwork.svg" alt="Upwork Logo">Upwork
-                        </a>
-                        <a class="button button-x" href="https://x.com/axif_173" target="_blank" rel="noopener" role="button">
-                            <img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="X Logo">Follow on X
-                        </a>
-                    </div>
-                </div>
-                <br>
+        <img src="images/AAA.svg" class="avatar" alt="">
+        <h1 role="heading">AASHIF</h1>
+        <p>My Profile Links.</p>
+        <div class="circular-scroll-container">
+            <div class="circular-scroll">
+                <a class="button button-linked" href="https://codeforces.com/profile/aashif000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/codeforces.svg" alt="Codeforces Logo">Codeforces
+                </a>
+                <a class="button button-dev-to" href="https://dev.to/aashif000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/dev-to.svg" alt="Dev.to Logo">Dev.to
+                </a>
+                <a class="button button-default" href="mailto:useforalljob1@gmail.com?subject=Your%20Subject%20Here&body=Your%20message%20here" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Me
+                </a>
+                <a class="button button-default" href="https://aashif000.github.io/My-Dark-UI-Profile/" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Homepage Icon">Visit Homepage
+                </a>
+                <a class="button button-fiverr" href="https://www.fiverr.com/aashif000?up_rollout=true" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/fiverr.svg" alt="Fiverr Logo">Fiverr Gig
+                </a>
+                <a class="button button-github" href="https://github.com/aashif000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub
+                </a>
+                <a class="button button-linked" href="https://www.hackerrank.com/profile/aashif000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/hackerrank.svg" alt="HackerRank Logo">HackerRank
+                </a>
+                <a class="button button-hashnode" href="https://hashnode.com/@aashif000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/hashnode.svg" alt="Hashnode Logo">Hashnode
+                </a>
+                <a class="button button-instagram" href="https://www.instagram.com/aax._if/" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram
+                </a>
+                <a class="button button-linked" href="https://www.linkedin.com/in/aashif-mj/" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn
+                </a>
+                <a class="button button-linked" href="https://leetcode.com/user-profile/aashif0000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/leetcode.svg" alt="LeetCode Logo">LeetCode
+                </a>
+                <a class="button button-mastodon" href="https://mastodon.social/@aashif000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/mastodon.svg" alt="Mastodon Logo">Mastodon
+                </a>
+                <a class="button button-medium" href="https://medium.com/@aashif000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/medium.svg" alt="Medium Logo">Medium
+                </a>
+                <a class="button button-pinterest" href="https://www.pinterest.com/useforalljob1/" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/pinterest.svg" alt="Pinterest Logo">Pinterest
+                </a>
+                <a class="button button-read-cv" href="https://read.cv/aashif000" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/read-cv.svg" alt="Read.cv logo">Read.cv
+                </a>
+                <a class="button button-reddit" href="https://www.reddit.com/user/Nice-Problem-5510/" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/reddit.svg" alt="Reddit Logo">Reddit
+                </a>
+                <a class="button button-slack" href="https://newworkspace-jre9172.slack.com/team/U06UVNFQC9G" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/slack.svg" alt="Slack Logo">Join Slack
+                </a>
+                <a class="button button-stack-overflow" href="https://stackoverflow.com/users/21885166/aashee" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/stack-overflow.svg" alt="Stack Overflow Logo">Stack Overflow
+                </a>
+                <a class="button button-upwork" href="https://www.upwork.com/freelancers/~01205e731893a6128d" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/upwork.svg" alt="Upwork Logo">Upwork
+                </a>
+                <a class="button button-x" href="https://x.com/axif_173" target="_blank" rel="noopener" role="button">
+                    <img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="X Logo">Follow on X
+                </a>
             </div>
         </div>
     </div>
